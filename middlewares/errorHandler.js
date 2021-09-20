@@ -1,0 +1,13 @@
+const { SERVER_MESSAGE } = require('../utils/constants');
+// сервер мессадж для 500
+module.exports = (err, req, res, next) => {
+  const { statusCode = 500, message } = err;
+
+  res.status(statusCode).send({
+    message: statusCode === 500
+      ? SERVER_MESSAGE
+      : message,
+  });
+
+  next();
+};

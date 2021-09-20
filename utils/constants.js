@@ -1,0 +1,17 @@
+module.exports = {
+  INVALID_CREDENTIALS_MESSAGE: 'Неправильная почта или пароль',
+  UNAUTHORIZED_MESSAGE: 'Необходима авторизация',
+  NOT_FOUND_MESSAGE: 'Страница не найдена',
+  USER_NOT_FOUND_MESSAGE: 'Пользователь с указанным _id не найден',
+  MOVIE_NOT_FOUND_MESSAGE: 'Фильм с указанным _id не найден',
+  MOVIES_NOT_FOUND_MESSAGE: 'Нет сохраненных фильмов',
+  BAD_REQUEST_MESSAGE: 'Переданы некорректные данные',
+  CONFLICT_MESSAGE: 'Пользователь с таким email уже существует',
+  FORBIDDEN_MESSAGE: 'Нет прав на удаление фильма',
+  MOVIE_DELETED_MESSAGE: 'Фильм удален',
+  SIGN_IN_MESSAGE: 'Вход выполнен',
+  SIGN_OUT_MESSAGE: 'Выход выполнен',
+  INVALID_EMAIL_MESSAGE: 'Некорректный адрес электроной почты',
+  INVALID_LINK_MESSAGE: 'Некорректная ссылка',
+  SERVER_MESSAGE: 'На сервере произошла ошибка',
+};
