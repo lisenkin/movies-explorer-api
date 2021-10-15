@@ -10,7 +10,7 @@ const {
 module.exports.getSavedMovies = (req, res, next) => {
   Movie.find({ owner: req.user._id })
     .then((movies) => {
-      if (movies.length >= 1) {
+      if (movies) {
         res.send(movies);
       } else {
         throw new NotFoundError(MOVIES_NOT_FOUND_MESSAGE);
